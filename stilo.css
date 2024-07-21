@@ -1,0 +1,118 @@
+body {
+    background: #eb8ae3 url('../isa.isa/img/fundo.jpg') no-repeat;
+    background-size: cover;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0a6ec;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: rgb(255, 5, 5);
+    cursor: pointer;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    color: rgb(66, 0, 151);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #b1bfff;
+    border-radius: 5px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f0a6ec;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
+        padding: 0;
+    }
+
+    #menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+    }
+
+    .menu ul li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .menu ul li a {
+        padding: 15px 0;
+    }
+}
+
+.titulos {
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2em;
+    
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 0 20px;
+}
+
+.caixa-imagem {
+    text-align: center;
+    margin: 39px;
+}
+
+.caixa-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
